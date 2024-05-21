@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+title: open masters project
+date: 2019-07-23
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+I am offering a Masters project joint with the Robotics Systems Lab of ETH on Data-enabled Predictive Control of Robotic Systems.
