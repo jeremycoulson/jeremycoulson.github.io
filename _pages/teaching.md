@@ -7,17 +7,49 @@ nav: true
 nav_order: 5
 ---
 
-___
-
 
 ### UW–Madison
-* Optimal Control (ECE 821): Spring 2024
-* Linear Systems (ECE 717): Fall 2024, Fall 2023
-
 ___
 
-### ETH Zurich
-* [Signals & Systems II](https://people.ee.ethz.ch/~sigsys/) (head teaching assistant)
-* [Quad-rotors: Control and Estimation](https://www.dfall.ethz.ch/pands.php)
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/blackbox_optimization_prediction.png" title="Crazyflie" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-8 mt-3 mt-md-0 align-self-center">
+        Optimal Control (ECE 821): Spring 2024
+    </div>
+</div>
 
-<img src="../assets/img/drone.jpg" width="300">
+<br>
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/data_uncertainty_cropped.png" title="Crazyflie" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-8 mt-3 mt-md-0 align-self-center">
+        Linear Systems (ECE 717): Fall 2024, Fall 2023
+    </div>
+</div>
+
+
+<br>
+
+### ETH Zurich
+___
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/drone.jpg" title="Crazyflie" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-8 mt-3 mt-md-0 align-self-center">
+        <a href="https://www.dfall.ethz.ch/pands.php">Quad-rotors: Control and Estimation</a>
+    </div>
+</div>
+<br>
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/lyapunov.png" title="Crazyflie" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-8 mt-3 mt-md-0 align-self-center">
+        <a href="https://people.ee.ethz.ch/~sigsys/">Signals & Systems II</a> (head teching assistant)
+    </div>
+</div>
