@@ -2,11 +2,54 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description:
 nav: true
-nav_order: 6
+nav_order: 5
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
 
-Organize your courses by years, topics, or universities, however you like!
+### UW–Madison
+___
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/blackbox_optimization_prediction.png" title="Crazyflie" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-8 mt-3 mt-md-0 align-self-center">
+        Optimal Control (ECE 821): Spring 2024
+    </div>
+</div>
+
+<br>
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/data_uncertainty_cropped.png" title="Crazyflie" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-8 mt-3 mt-md-0 align-self-center">
+        Linear Systems (ECE 717): Fall 2024, Fall 2023
+    </div>
+</div>
+
+
+<br>
+
+### ETH Zurich
+___
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/drone.jpg" title="Crazyflie" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-8 mt-3 mt-md-0 align-self-center">
+        <a href="https://www.dfall.ethz.ch/pands.php">Quad-rotors: Control and Estimation</a>
+    </div>
+</div>
+<br>
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/lyapunov.png" title="Crazyflie" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-8 mt-3 mt-md-0 align-self-center">
+        <a href="https://people.ee.ethz.ch/~sigsys/">Signals & Systems II</a> (head teching assistant)
+    </div>
+</div>
