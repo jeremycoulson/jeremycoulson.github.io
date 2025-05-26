@@ -14,7 +14,7 @@ nav_order: 4
 ### Bachelor Students
 * Kyle Horton
 
-I am currently looking for talented students with interests in the area of systems and control theory and data-driven control. If you are interested in pursuing a PhD or Master's degree with me and feel like you would be a good fit, please feel free to contact me via email.
+<!-- I am currently looking for talented students with interests in the area of systems and control theory and data-driven control. If you are interested in pursuing a PhD or Master's degree with me and feel like you would be a good fit, please feel free to contact me via email. -->
 
 ___
 
