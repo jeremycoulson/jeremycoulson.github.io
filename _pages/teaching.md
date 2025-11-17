@@ -7,58 +7,47 @@ nav: true
 nav_order: 5
 ---
 
+{% assign teaching_by_institution = site.data.teaching | group_by: "institution" %}
 
-### UW–Madison
+{% for group in teaching_by_institution %}
+### {{ group.name }}
 ___
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/optimization.jpg" title="Optimization" class="img-fluid rounded z-depth-1" %}
+<div class="row">
+  {% for course in group.items %}
+  <div class="col-md-6 mb-4">
+    <div class="card h-100">
+      {% if course.image %}
+        {% include figure.liquid
+           path=course.image
+           class="card-img-top img-fluid rounded"
+           alt=course.title %}
+      {% endif %}
+
+      <div class="card-body text-center">
+        <h5 class="card-title mb-1">
+          {% if course.url %}
+            <a href="{{ course.url }}">{{ course.title }}</a>
+          {% else %}
+            {{ course.title }}
+          {% endif %}
+        </h5>
+
+        {% if course.code %}
+        <p class="card-text small text-muted mb-1">
+          {{ course.code }}
+        </p>
+        {% endif %}
+
+        {% if course.terms %}
+        <p class="card-text small text-muted">
+          {{ course.terms }}
+        </p>
+        {% endif %}
+      </div>
     </div>
-    <div class="col-sm-8 mt-3 mt-md-0 align-self-center">
-        Introduction to Optimization (ECE/CS/IsYE 524): Spring 2025
-    </div>
+  </div>
+  {% endfor %}
 </div>
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/blackbox_optimization_prediction.png" title="black-box" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-8 mt-3 mt-md-0 align-self-center">
-        Optimal Control (ECE 821): Spring 2024
-    </div>
-</div>
-
-<br>
-<div class="row justify-content-sm-center">
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/data_uncertainty_cropped.png" title="linear-subspace" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-8 mt-3 mt-md-0 align-self-center">
-        Linear Systems (ECE 717): Fall 2025, Fall 2024, Fall 2023
-    </div>
-</div>
-
-
-<br>
-
-### ETH Zurich
-___
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/drone.jpg" title="Crazyflie" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-8 mt-3 mt-md-0 align-self-center">
-        <a href="https://www.dfall.ethz.ch/pands.php">Quad-rotors: Control and Estimation</a>
-    </div>
-</div>
-<br>
-<div class="row justify-content-sm-center">
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/lyapunov.png" title="lyapunov" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-8 mt-3 mt-md-0 align-self-center">
-        <a href="https://people.ee.ethz.ch/~sigsys/">Signals & Systems II</a> (head teching assistant)
-    </div>
-</div>
+{% endfor %}

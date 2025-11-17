@@ -1,0 +1,34 @@
+- institution: "UW–Madison"
+  title: "Introduction to Optimization"
+  code: "ECE/CS/ISyE 524"
+  terms: "Spring 2025"
+  image: "assets/img/optimization.jpg"
+  url:
+
+- institution: "UW–Madison"
+  title: "Optimal Control"
+  code: "ECE 821"
+  terms: "Spring 2024"
+  image: "assets/img/blackbox_optimization_prediction.png"
+  url:
+
+- institution: "UW–Madison"
+  title: "Linear Systems"
+  code: "ECE 717"
+  terms: "Fall 2025, Fall 2024, Fall 2023"
+  image: "assets/img/data_uncertainty_cropped.png"
+  url:
+
+- institution: "ETH Zurich"
+  title: "Quad-rotors: Control and Estimation"
+  code:
+  terms:
+  image: "assets/img/drone.jpg"
+  url: "https://www.dfall.ethz.ch/pands.php"
+
+- institution: "ETH Zurich"
+  title: "Signals & Systems II"
+  code:
+  terms: "(head teaching assistant)"
+  image: "assets/img/lyapunov.png"
+  url: "https://people.ee.ethz.ch/~sigsys/"

@@ -1,0 +1,20 @@
+- year: 2024
+  title: "Data-enabled Predictive Control: Regularization and Robustness"
+  event: "Midwest Workshop on Control and Game Theory"
+  location: "Northwestern University"
+  slides: "/assets/pdf/2024_midwest.pdf"
+  image: "assets/img/deepc_cartoon.png"
+
+- year: 2023
+  title: "Data-enabled Predictive Control: Regularization and Robustness"
+  event: "World Congress of the International Federation of Automatic Control (IFAC)"
+  location: "Yokohama, Japan"
+  slides: "/assets/pdf/2023_IFAC.pdf"
+  image: "assets/img/wasserstein_ball_cropped.png"
+
+- year: 2023
+  title: "A Quantitative Notion of Persistency of Excitation and the Robust Fundamental Lemma"
+  event: "American Control Conference (ACC)"
+  location: "San Diego, USA"
+  slides: "/assets/pdf/2023_ACCmine.pdf"
+  image: "assets/img/2023_ACCmine.png"
