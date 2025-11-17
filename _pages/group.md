@@ -8,8 +8,36 @@ nav_order: 4
 ---
 
 ### PhD Students
-* Joel Stevens
-* [Dian Jin](https://dianjin-frederick.github.io/)
+<!-- * Joel Stevens
+* [Dian Jin](https://dianjin-frederick.github.io/) -->
+<div class="row">
+  <div class="col-md-4 col-sm-6">
+    <div class="card my-3">
+      <img src="{{ '/assets/img/group/joel-stevens.png' | relative_url }}"
+           class="card-img-top img-fluid rounded"
+           alt="Photo of Joel Stevens">
+      <div class="card-body text-center">
+        <h5 class="card-title mb-0">Joel Stevens</h5>
+        <p class="card-text small text-muted">PhD student</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-sm-6">
+    <div class="card my-3">
+      <img src="{{ '/assets/img/group/dian-jin.jpg' | relative_url }}"
+           class="card-img-top img-fluid rounded"
+           alt="Photo of Dian Jin">
+      <div class="card-body text-center">
+        <h5 class="card-title mb-0">
+          <a href="https://dianjin-frederick.github.io/">Dian Jin</a>
+        </h5>
+        <p class="card-text small text-muted">PhD student</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 ### Bachelor Students
 * Chengling Xu
