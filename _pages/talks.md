@@ -4,7 +4,7 @@ permalink: /talks/
 title: talks
 description:
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
 {% assign talks_by_year = site.data.talks | group_by: "year" | sort: "name" | reverse %}

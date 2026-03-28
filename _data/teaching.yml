@@ -3,21 +3,21 @@
   code: "ECE/CS/ISyE 524"
   terms: "Spring 2025"
   image: "assets/img/optimization.jpg"
-  url:
+  url: "/teaching/ece524/"
 
 - institution: "UW–Madison"
   title: "Optimal Control"
   code: "ECE 821"
   terms: "Spring 2024"
   image: "assets/img/blackbox_optimization_prediction.png"
-  url:
+  url: "/teaching/ece821/"
 
 - institution: "UW–Madison"
   title: "Linear Systems"
   code: "ECE 717"
   terms: "Fall 2025, Fall 2024, Fall 2023"
   image: "assets/img/data_uncertainty_cropped.png"
-  url:
+  url: "/teaching/ece717/"
 
 - institution: "ETH Zurich"
   title: "Quad-rotors: Control and Estimation"
