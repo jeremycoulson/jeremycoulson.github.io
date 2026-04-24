@@ -5,6 +5,8 @@ title: teaching
 description:
 nav: true
 nav_order: 6
+banner_image: coulson-whiteboard.jpg
+banner_position: center 20%
 ---
 
 {% assign teaching_by_institution = site.data.teaching | group_by: "institution" %}
@@ -13,41 +15,38 @@ nav_order: 6
 ### {{ group.name }}
 ___
 
-<div class="row">
-  {% for course in group.items %}
-  <div class="col-md-6 mb-4">
-    <div class="card h-100">
-      {% if course.image %}
-        {% include figure.liquid
-           path=course.image
-           class="card-img-top img-fluid rounded"
-           alt=course.title %}
-      {% endif %}
-
-      <div class="card-body text-center">
-        <h5 class="card-title mb-1">
-          {% if course.url %}
-            <a href="{{ course.url }}">{{ course.title }}</a>
-          {% else %}
-            {{ course.title }}
-          {% endif %}
-        </h5>
-
-        {% if course.code %}
-        <p class="card-text small text-muted mb-1">
-          {{ course.code }}
-        </p>
-        {% endif %}
-
-        {% if course.terms %}
-        <p class="card-text small text-muted">
-          {{ course.terms }}
-        </p>
-        {% endif %}
-      </div>
-    </div>
+{% for course in group.items %}
+<div class="row mb-4 align-items-center">
+  {% if course.image %}
+  <div class="col-md-4">
+    {% if course.url %}
+    <a href="{{ course.url }}">
+    {% endif %}
+      {% include figure.liquid
+         path=course.image
+         class="img-fluid rounded"
+         alt=course.title %}
+    {% if course.url %}
+    </a>
+    {% endif %}
   </div>
-  {% endfor %}
+  {% endif %}
+  <div class="col-md-8">
+    <h4 class="mb-1">
+      {% if course.url %}
+        <a href="{{ course.url }}">{{ course.title }}</a>
+      {% else %}
+        {{ course.title }}
+      {% endif %}
+    </h4>
+    {% if course.code %}
+    <p class="text-muted mb-0">{{ course.code }}</p>
+    {% endif %}
+    {% if course.terms %}
+    <p class="text-muted">{{ course.terms }}</p>
+    {% endif %}
+  </div>
 </div>
+{% endfor %}
 
 {% endfor %}

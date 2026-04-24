@@ -1,3 +1,17 @@
+@online{bharadwajMinMaxGrassmannianOptimization2026,
+  title = {Min-{{Max Grassmannian Optimization}} for {{Online Subspace Tracking}}},
+  author = {Bharadwaj, Shreyas and Mishra, Bamdev and Mostajeran, Cyrus and Padoan, Alberto and Coulson, Jeremy and Banavar, Ravi},
+  date = {2026-04-01},
+  eprint = {2604.00825},
+  eprinttype = {arXiv},
+  doi = {10.48550/arXiv.2604.00825},
+  url = {http://arxiv.org/abs/2604.00825},
+  urldate = {2026-04-23},
+  abstract = {This paper discusses robustness guarantees for online tracking of time-varying subspaces from noisy data. Building on recent work in optimization over a Grassmannian manifold, we introduce a new approach for robust subspace tracking by modeling data uncertainty in a Grassmannian ball. The robust subspace tracking problem is cast into a min-max optimization framework, for which we derive a closed-form solution for the worst-case subspace, enabling a geometric robustness adjustment that is both analytically tractable and computationally efficient, unlike iterative convex relaxations. The resulting algorithm, GeRoST (Geometrically Robust Subspace Tracking), is validated on two case studies: tracking a linear time-varying system and online foreground-background separation in video.},
+  pubstate = {prepublished},
+  keywords = {Electrical Engineering and Systems Science - Systems and Control,Mathematics - Optimization and Control,under-review}
+}
+
 @online{bharadwajRobustLeastSquaresOptimization2025,
   title = {Robust {{Least-Squares Optimization}} for {{Data-Driven Predictive Control}}: {{A Geometric Approach}}},
   shorttitle = {Robust {{Least-Squares Optimization}} for {{Data-Driven Predictive Control}}},
@@ -10,7 +24,7 @@
   urldate = {2026-03-27},
   abstract = {The paper studies a geometrically robust least-squares problem that extends classical and norm-based robust formulations. Rather than minimizing residual error for fixed or perturbed data, we interpret least-squares as enforcing approximate subspace inclusion between measured and true data spaces. The uncertainty in this geometric relation is modeled as a metric ball on the Grassmannian manifold, leading to a min-max problem over Euclidean and manifold variables. The inner maximization admits a closed-form solution, enabling an efficient algorithm with a transparent geometric interpretation. Applied to robust finite-horizon linear-quadratic tracking in data-enabled predictive control, the method improves upon existing robust least-squares formulations, achieving stronger robustness and favorable scaling under small uncertainty.},
   pubstate = {prepublished},
-  keywords = {Computer Science - Machine Learning,Mathematics - Optimization and Control,to-appear},
+  keywords = {Computer Science - Machine Learning,Mathematics - Optimization and Control,to-appear}
 }
 
 @online{jinOnlineSubspaceLearning2025,
@@ -24,7 +38,7 @@
   urldate = {2026-03-27},
   abstract = {Data-driven control methods based on subspace representations are powerful but are often limited to linear time-invariant systems where the model order is known. A key challenge is developing online data-driven control algorithms for time-varying systems, especially when the system's complexity is unknown or changes over time. To address this, we propose a novel online subspace learning framework that operates on flag manifolds. Our algorithm leverages streaming data to recursively track an ensemble of nested subspaces, allowing it to adapt to varying system dimensions without prior knowledge of the true model order. We show that our algorithm is a generalization of the Grassmannian Recursive Algorithm for Tracking. The learned subspace models are then integrated into a data-driven simulation framework to perform prediction for unknown dynamical systems. The effectiveness of this approach is demonstrated through a case study where the proposed adaptive predictor successfully handles abrupt changes in system dynamics and outperforms several baselines.},
   pubstate = {prepublished},
-  keywords = {Mathematics - Optimization and Control,to-appear},
+  keywords = {Mathematics - Optimization and Control,to-appear}
 }
 
 @online{jinSensitivitySubspacePredictor2026,
@@ -38,7 +52,21 @@
   urldate = {2026-03-27},
   abstract = {Behavioral systems define discrete-time Linear Time-Invariant systems in terms of a set of trajectories, which forms a linear subspace. This subspace underlies the subspace predictor used in data-driven prediction and control. In practice, such subspaces are typically represented through data matrices. For robustness certification and uncertainty quantification, however, these matrix representations are coordinate-dependent and therefore do not provide a coordinate-free way to quantify uncertainty. In this work, we establish two key properties of the subspace predictor. We first show that the subspace predictor is invariant under change of basis and depends only on the underlying behavioral subspace. We then derive the first explicit prediction error bound in terms of behavioral distance between the true subspace and an estimate, showing that the predictor is locally Lipschitz with respect to behavioral perturbations. We also present a one-step prediction error bound that is relevant for receding-horizon implementations and can be computed directly. Numerical experiments show that the theoretical bound upper-bounds the prediction error, and that the average prediction error bound grows linearly with the behavioral distance.},
   pubstate = {prepublished},
-  keywords = {Mathematics - Optimization and Control,under-review},
+  keywords = {Mathematics - Optimization and Control,under-review}
+}
+
+@online{stevensInformativityDatadrivenPrediction2026,
+  title = {Informativity for {{Data-driven Prediction}}},
+  author = {Stevens, Joel and Coulson, Jeremy},
+  date = {2026-04-13},
+  eprint = {2604.11726},
+  eprinttype = {arXiv},
+  doi = {10.48550/arXiv.2604.11726},
+  url = {http://arxiv.org/abs/2604.11726},
+  urldate = {2026-04-23},
+  abstract = {In this work we examine the problem of data-driven prediction. That is, given a LTI system with unknown dynamics, we wish to use data collected from the system to predict the system's output response to a given sequence of known inputs. Current methods for predicting require strong conditions on the data such as persistency of excitation. We examine this problem with the goal of finding weaker conditions that still enable prediction. We approach the problem from the data informativity perspective and formally define the notion of informativity for unique prediction. We provide sufficient conditions for informativity for unique prediction and design algorithms to compute the unique output trajectory of the unknown system given known inputs. We demonstrate the results with a numerical example showing that unique output prediction is possible without being able to uniquely identify the unknown data-generating system.},
+  pubstate = {prepublished},
+  keywords = {Mathematics - Optimization and Control,under-review}
 }
 
 @online{waardeTimeSeriesDissipativity2026,
@@ -52,5 +80,5 @@
   urldate = {2026-03-27},
   abstract = {This paper studies the problem of verifying dissipativity of linear time-invariant (LTI) systems using input-output data. We leverage behavioral systems theory to express dissipativity in terms of quadratic difference forms (QDFs), allowing the study of general dynamic quadratic supply rates. We work under the assumptions that the data-generating system is controllable, and an upper bound is given on its lag. As our main results, we provide sufficient conditions for the data to be informative for dissipativity. We also show that for a specific class of static supply rates, these conditions are both necessary and sufficient. For the latter supply rates, it turns out that certification of dissipativity is only possible from data that enable unique system identification. As auxiliary results, we highlight some properties of QDFs, such as upper bounds on the degree of storage functions.},
   pubstate = {prepublished},
-  keywords = {Mathematics - Dynamical Systems,Mathematics - Optimization and Control,under-review},
+  keywords = {Mathematics - Dynamical Systems,Mathematics - Optimization and Control,under-review}
 }

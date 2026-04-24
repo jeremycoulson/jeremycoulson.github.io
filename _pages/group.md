@@ -5,6 +5,8 @@ title: group
 description:
 nav: true
 nav_order: 4
+banner_image: hankel-distance.png
+banner_position: center 50%
 ---
 
 ### PhD Students

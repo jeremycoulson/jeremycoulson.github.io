@@ -5,6 +5,8 @@ title: publications
 description:
 nav: true
 nav_order: 3
+banner_image: library.jpg
+banner_position: center 100%
 ---
 
 <!-- _pages/publications.md -->

@@ -1,3 +1,10 @@
+- year: 2025
+  title: "Distances between finite horizon linear behaviors"
+  event: "Conference on Decision and Control (CDC)"
+  location: "Rio de Janeiro, Brazil"
+  slides: "assets/pdf/distances-between-finite-horizon-linear-behaviors.pdf"
+  image: "assets/img/distances-talk.pdf"
+
 - year: 2024
   title: "Data-enabled Predictive Control: Regularization and Robustness"
   event: "Midwest Workshop on Control and Game Theory"

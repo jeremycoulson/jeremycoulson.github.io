@@ -907,6 +907,15 @@ html.transition *:after {
   transition-delay: 0 !important;
 }
 
+.page-banner {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin-bottom: 2rem;
+}
+
 // Extra Markdown style (post Customization)
 .post {
   .post-meta {

@@ -2,18 +2,30 @@
 layout: page
 title: research
 permalink: /research/
-description: Research projects in data-driven control, robotics, and energy systems.
+description: A few highlighted research projects.
 nav: true
 nav_order: 2
-horizontal: false
+banner_image: hankel-vs-statespace.png
+banner_position: center 50%
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-  {% assign sorted_projects = site.projects | sort: "importance" %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
+{% assign sorted_projects = site.projects | sort: "importance" %}
+
+{% for project in sorted_projects %}
+<div class="row mb-4 align-items-center">
+  {% if project.img %}
+  <div class="col-md-4">
+    {% include figure.liquid
+       path=project.img
+       class="img-fluid rounded"
+       alt=project.title %}
+  </div>
+  {% endif %}
+  <div class="col-md-8">
+    <h4>{{ project.title }}</h4>
+    <p>{{ project.description }}</p>
+    {{ project.content | markdownify }}
   </div>
 </div>
+{% unless forloop.last %}<hr>{% endunless %}
+{% endfor %}
