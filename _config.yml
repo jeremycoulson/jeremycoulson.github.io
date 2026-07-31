@@ -279,7 +279,7 @@ scholar:
   details_link: Details
 
   query: "@*"
-  sort_by: date
+  sort_by: year
   order: descending
 
 # Display different badges withs stats for your publications

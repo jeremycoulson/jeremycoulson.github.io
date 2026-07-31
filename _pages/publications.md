@@ -5,7 +5,7 @@ title: publications
 description:
 nav: true
 nav_order: 3
-banner_image: library.jpg
+banner_image: books.jpg
 banner_position: center 100%
 ---
 
