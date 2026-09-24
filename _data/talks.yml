@@ -1,3 +1,10 @@
+- year: 2026
+  title: "Control without models: Data-driven control and its applications in robotics"
+  event: "Machine–Ground Interaction Consortium (MaGIC)"
+  location: "University of Wisconsin–Madison"
+  slides: "assets/pdf/2026-MAGIC.pdf"
+  image: "assets/img/2026-MAGIC.png"
+
 - year: 2025
   title: "Distances between finite horizon linear behaviors"
   event: "Conference on Decision and Control (CDC)"
